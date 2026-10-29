@@ -7,7 +7,7 @@ public class ClientService {
         String clientId = (
             accountList.size() == 1 ? accountList[0].Id :
             leadList.size() == 1 ? leadList[0].Id :
-            null
+            null  
         );
 
         if(accountList.size() == 0 && leadList.size() == 0) {
