@@ -1,0 +1,28 @@
+<template>
+    <template lwc:if={a}>
+        <lightning-input label="FirstName" value={firstName} onchange={input1}>
+        </lightning-input>
+        <lightning-input label="LastName" value={lasttname} onchange={input2}>
+        </lightning-input>
+        <lightning-input label="Phone" value={phone} onchange={input3}>
+        </lightning-input>
+        <lightning-button variant="brand" label="Start" title="Begins the task" onclick={botao1}>
+        </lightning-button>
+        
+    </template>
+    <template lwc:if={b}>
+        <h1>Sabores de Sorvete</h1>
+        <lightning-select name="tickets" label="Choose your flavor" value={selectedFlavor} options={picklistFlavors} onchange={handleSelectFlavor}>a</lightning-select>
+        <lightning-button variant="brand" label="Confirm" title="Begins the task" onclick={botao2}>
+        </lightning-button>
+    </template>
+    <template lwc:if={c}>
+        <h1>Nova oportunidade</h1>
+        <template lwc:if={createOrder}>
+            <p>{createOrder.Name}</p>
+        </template>
+    </template>
+    
+    
+    
+</template>

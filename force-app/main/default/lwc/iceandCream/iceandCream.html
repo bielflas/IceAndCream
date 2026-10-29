@@ -1,0 +1,16 @@
+<template>
+    <h1>"Sabores de Sorvete"</h1>
+        <template if:true={flavors.data}>
+            <ul class="lista">
+                <template for:each={flavors.data} for:item="flavor"> //* igual ao for (Product2 flavor : flavors.data)
+                    <li key={flavor.Id} class="sabor">{flavor.Name}</li>  
+                </template>
+            </ul>
+        </template>
+        
+
+        <template if:true={flavors.error}>
+            <p class="erro">Erro ao carregar os sabores.</p>
+        </template>
+    </lightning-card>
+</template>

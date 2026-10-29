@@ -1,0 +1,22 @@
+.lista {
+    padding: 0 16px;
+    list-style: none;
+}
+
+.sabor {
+    background-color: #fce4ec;
+    color: #880e4f;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.sabor:hover {
+    background-color: #f8bbd0;
+}
+
+.erro {
+    padding: 0 16px;    
+    color: red;
+}
